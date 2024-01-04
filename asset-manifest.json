@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.666cd54f.css",
-    "main.js": "/static/js/main.e9c56f82.js",
-    "static/js/787.76ffc7ed.chunk.js": "/static/js/787.76ffc7ed.chunk.js",
-    "static/media/modern-tokyo-street-background (1).jpg": "/static/media/modern-tokyo-street-background (1).d7a4d1fd99d28e0a036c.jpg",
-    "static/media/low-angle-shot-tall-city-building-with-blue-sky-background-new-york (1).jpg": "/static/media/low-angle-shot-tall-city-building-with-blue-sky-background-new-york (1).aa36c48204c2d5f51348.jpg",
-    "static/media/beautiful-london-streets-cityscape (1).jpg": "/static/media/beautiful-london-streets-cityscape (1).a7353dd3e7b4a6e3aac4.jpg",
-    "static/media/pexels-daka-12567048.jpg": "/static/media/pexels-daka-12567048.ff5d60c3ca09e770fa11.jpg",
-    "static/media/pexels-fatih-güney-19260502.jpg": "/static/media/pexels-fatih-güney-19260502.4d66f5c8596e0a5da049.jpg",
-    "static/media/planeCse.webp": "/static/media/planeCse.6ad86c0c3bf44ada6eb9.webp",
-    "static/media/diverse-hands-touching-white-paper_53876-98411.jpg": "/static/media/diverse-hands-touching-white-paper_53876-98411.38ab6aa25840e5ce6572.jpg",
-    "static/media/pexels-gonzalo-carlos-novillo-lapeyra-19286485 (1).jpg": "/static/media/pexels-gonzalo-carlos-novillo-lapeyra-19286485 (1).45154d7c3bad09914f1e.jpg",
-    "static/media/Aeonik-Bold.woff2": "/static/media/Aeonik-Bold.4b5c5bec6248f51c46f2.woff2",
-    "static/media/Aeonik-Medium.woff2": "/static/media/Aeonik-Medium.a584ebd29a0626ccf36d.woff2",
-    "static/media/Aeonik-Light.woff2": "/static/media/Aeonik-Light.d999f4170bef4354fb26.woff2",
-    "static/media/Aeonik-Regular.woff2": "/static/media/Aeonik-Regular.c672e6fbaa411f5719f3.woff2",
-    "static/media/workaholics-businesspeople-brainstorming-financial-company-ideas_482257-10539.jpg": "/static/media/workaholics-businesspeople-brainstorming-financial-company-ideas_482257-10539.3b6d4c8ff7d63e716f50.jpg",
-    "index.html": "/index.html",
-    "main.666cd54f.css.map": "/static/css/main.666cd54f.css.map",
-    "main.e9c56f82.js.map": "/static/js/main.e9c56f82.js.map",
-    "787.76ffc7ed.chunk.js.map": "/static/js/787.76ffc7ed.chunk.js.map"
+    "main.css": "/pixelflakes/static/css/main.cb98b25c.css",
+    "main.js": "/pixelflakes/static/js/main.87790064.js",
+    "static/js/787.76ffc7ed.chunk.js": "/pixelflakes/static/js/787.76ffc7ed.chunk.js",
+    "static/media/modern-tokyo-street-background (1).jpg": "/pixelflakes/static/media/modern-tokyo-street-background (1).d7a4d1fd99d28e0a036c.jpg",
+    "static/media/low-angle-shot-tall-city-building-with-blue-sky-background-new-york (1).jpg": "/pixelflakes/static/media/low-angle-shot-tall-city-building-with-blue-sky-background-new-york (1).aa36c48204c2d5f51348.jpg",
+    "static/media/beautiful-london-streets-cityscape (1).jpg": "/pixelflakes/static/media/beautiful-london-streets-cityscape (1).a7353dd3e7b4a6e3aac4.jpg",
+    "static/media/pexels-daka-12567048.jpg": "/pixelflakes/static/media/pexels-daka-12567048.ff5d60c3ca09e770fa11.jpg",
+    "static/media/pexels-fatih-güney-19260502.jpg": "/pixelflakes/static/media/pexels-fatih-güney-19260502.4d66f5c8596e0a5da049.jpg",
+    "static/media/planeCse.webp": "/pixelflakes/static/media/planeCse.6ad86c0c3bf44ada6eb9.webp",
+    "static/media/diverse-hands-touching-white-paper_53876-98411.jpg": "/pixelflakes/static/media/diverse-hands-touching-white-paper_53876-98411.38ab6aa25840e5ce6572.jpg",
+    "static/media/pexels-gonzalo-carlos-novillo-lapeyra-19286485 (1).jpg": "/pixelflakes/static/media/pexels-gonzalo-carlos-novillo-lapeyra-19286485 (1).45154d7c3bad09914f1e.jpg",
+    "static/media/Aeonik-Bold.woff2": "/pixelflakes/static/media/Aeonik-Bold.4b5c5bec6248f51c46f2.woff2",
+    "static/media/Aeonik-Medium.woff2": "/pixelflakes/static/media/Aeonik-Medium.a584ebd29a0626ccf36d.woff2",
+    "static/media/Aeonik-Light.woff2": "/pixelflakes/static/media/Aeonik-Light.d999f4170bef4354fb26.woff2",
+    "static/media/Aeonik-Regular.woff2": "/pixelflakes/static/media/Aeonik-Regular.c672e6fbaa411f5719f3.woff2",
+    "static/media/workaholics-businesspeople-brainstorming-financial-company-ideas_482257-10539.jpg": "/pixelflakes/static/media/workaholics-businesspeople-brainstorming-financial-company-ideas_482257-10539.3b6d4c8ff7d63e716f50.jpg",
+    "index.html": "/pixelflakes/index.html",
+    "main.cb98b25c.css.map": "/pixelflakes/static/css/main.cb98b25c.css.map",
+    "main.87790064.js.map": "/pixelflakes/static/js/main.87790064.js.map",
+    "787.76ffc7ed.chunk.js.map": "/pixelflakes/static/js/787.76ffc7ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.666cd54f.css",
-    "static/js/main.e9c56f82.js"
+    "static/css/main.cb98b25c.css",
+    "static/js/main.87790064.js"
   ]
 }
