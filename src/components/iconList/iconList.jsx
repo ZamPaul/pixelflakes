@@ -21,7 +21,7 @@ function IconList({color, variants}) {
                     exit='out'
                     initial='initial'
                     >
-                        <img src={`/socialIcons/social${i+1}.png`} alt="" style={{width:'100%', height:'100%', objectFit: 'cover', pointerEvents:'none', filter:`invert(${invert})`}} />
+                        <img src={`./socialIcons/social${i+1}.png`} alt="" style={{width:'100%', height:'100%', objectFit: 'cover', pointerEvents:'none', filter:`invert(${invert})`}} />
                     </motion.div>
                 )
             })

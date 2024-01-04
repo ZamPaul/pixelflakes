@@ -112,7 +112,7 @@ export default FullPageMenu
 const data = [
   {
     text:'Case Studies',
-    src: '/linkSketch/sketch1.jpeg',
+    src: './linkSketch/sketch1.jpeg',
     Link:'/case-studies',
     dimensions: {
       width: '20vw',
@@ -125,7 +125,7 @@ const data = [
   },
   {
     text: 'Gallery',
-    src: '/linkSketch/sketch2.jpg',
+    src: './linkSketch/sketch2.jpg',
     Link: '/gallery',
     dimensions: {
       width: '15vw',
@@ -143,7 +143,7 @@ const extras = ['Animation','Interactive','Visualisation']
 const data2 = [
   {
     text: 'About',
-    src: '/linkSketch/sketch3.jpg',
+    src: './linkSketch/sketch3.jpg',
     Link: '/about',
     dimensions: {
       width: '17vw',
@@ -156,7 +156,7 @@ const data2 = [
   },
   {
     text: 'Contact',
-    src: '/linkSketch/sketch4.jpg',
+    src: './linkSketch/sketch4.jpg',
     Link: '/contact',
     dimensions: {
       width: '28vw',

@@ -15,7 +15,7 @@ function FooterMenu() {
                         [...Array(4)].map((_,i) => {
                             return (
                                 <div className="social-icon" key={i} style={{cursor:"pointer"}}>
-                                    <img src={`/socialIcons/social${i+1}.png`} alt="" style={{width:'100%', height:'100%', objectFit: 'cover', pointerEvents:'none'}} />
+                                    <img src={`./socialIcons/social${i+1}.png`} alt="" style={{width:'100%', height:'100%', objectFit: 'cover', pointerEvents:'none'}} />
                                 </div>
                             )
                         })

@@ -161,7 +161,7 @@ function Drag({isActive}) {
             }
             return (
               <motion.div className="image" animate key={i} style={{ width:elem.dimensions.width, height:elem.dimensions.height, left: isActive ? elem.position.left : '50%', top: isActive ? elem.position.top : '50%' }}>
-                <img src={`/Canvas/image${i+1}.webp`} alt="image" />
+                <img src={`./Canvas/image${i+1}.webp`} alt="image" />
               </motion.div>
             )
           })

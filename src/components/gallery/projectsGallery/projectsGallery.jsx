@@ -69,8 +69,8 @@ function ProjectsGallery({}) {
             {
                 data.map( (elem,i) => {
 
-                let project = elem.check==="img" ? <img src={`/projects/project${i+1}.webp`} alt="" /> :
-                <video loop autoPlay muted><source src={`/projects/project${i+1}.mp4`}/></video>;
+                let project = elem.check==="img" ? <img src={`./projects/project${i+1}.webp`} alt="" /> :
+                <video loop autoPlay muted><source src={`./projects/project${i+1}.mp4`}/></video>;
 
                 return  <Project 
                             key={i} 

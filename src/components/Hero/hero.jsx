@@ -87,7 +87,7 @@ export default function Hero() {
       <div className="video-container">
         <div className="video">
           <video autoPlay loop muted>
-            <source  src='/vim/home-page-vi.mp4'/>
+            <source  src='./vim/home-page-vi.mp4'/>
           </video>
         </div>
         <div className="champion">

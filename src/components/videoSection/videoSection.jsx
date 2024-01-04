@@ -8,7 +8,7 @@ function VideoSection() {
     <div className='section-wrapper'>
       <div className="upper">
         <video autoPlay loop muted>
-          <source src="/vim/vi-2.mp4"/>
+          <source src="./vim/vi-2.mp4"/>
         </video>
         <div className="paragraph-wrap">
           <p style={{alignSelf:"flex-end"}}>If you’d like to discuss a potential</p>
