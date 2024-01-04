@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Header from './components/header/header';
+import Toggle from './components/toggle/toggle';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ScrollToTop from '../src/components/scrollToTop'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path='/*' element={<App/>} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

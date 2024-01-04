@@ -1,0 +1,89 @@
+.casePage{
+    width: 100%;
+}
+
+.casePage .main-heading h1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.casePage .main-heading{
+    margin-top: 45vh;
+}
+
+.main-heading h1 .span-tag{
+    font-size: 7vw;
+    font-family: a1;
+    font-weight: 900;
+}
+
+.main-heading h1 span:nth-child(2){
+    font-size: 18px;
+}
+
+.cases{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20vh;
+}
+
+.cases-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    width: 96%;
+}
+
+.cases-wrap .cases-upper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cases-wrap .cases-mid, .cases-wrap .cases-lower{
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 46vw;
+}
+
+.cases-wrap .cases-lower{
+    padding-left: 20vw;
+}
+
+@media (max-width:1024px) and (min-height:1000px) {
+    .casePage .main-heading{
+        margin-top: 23vh;
+    }
+    .cases{
+        padding-bottom: 10vh;
+    }
+}
+
+@media (max-width:576px) and (max-height:1000px) {
+    .casePage .main-heading{
+        margin-top: 20vh;
+        padding-bottom: 4vh;
+    }
+    .cases{
+        padding-bottom: 10vh;
+    }
+    .main-heading h1 .span-tag{
+        font-size: 13vw;
+    }
+    .cases-wrap .cases-upper{
+        flex-direction: column;
+        gap: 6vw;
+    }
+    .cases-wrap .cases-mid, .cases-wrap .cases-lower{
+        justify-content: center;
+        padding: 0;
+    }
+}

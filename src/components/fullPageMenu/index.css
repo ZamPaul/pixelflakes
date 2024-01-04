@@ -1,0 +1,187 @@
+.full-page-menu{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transform-origin: 50% 100%;
+    z-index: 4000;
+    background-color: #121212;
+}
+
+.full-page-menu .anim-overlay{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    pointer-events: none;
+    /* background-color: aqua; */
+    left: 0%;
+    top: 0%;
+}
+
+.anim-overlay .menu-bar{
+    width: 100%;
+    /* background-color: #121212; */
+}
+
+.full-page-menu .full-page-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-page-menu .top-svg{
+    position: absolute;
+    left: 3%;
+    top: 5vh;
+}
+
+.full-page-menu .menu-icons{
+    position: absolute;
+    left: 3%;
+    bottom: 5vh;
+    pointer-events: all;
+    /* z-index: 4000; */
+}
+
+.full-page-inner .menu-links-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10vw;
+    height: fit-content;
+    /* background-color: aqua; */
+}
+
+.full-page-inner .menu-links-wrap .left-part, .full-page-inner .menu-links-wrap .right-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6vw;
+    /* background-color: blue; */
+}
+
+.full-page-inner .menu-links-wrap .left-part{
+    padding-bottom: 7vh;
+}
+
+.full-page-inner .menu-links-wrap .right-part{
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.full-page-inner .menu-links-wrap .right-part .mobile-extra{
+    display: none;
+}
+
+.full-page-inner .menu-links-wrap .left-part .upper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap:3px; */
+}
+
+.full-page-inner .menu-links-wrap .left-part .lower, .full-page-inner .menu-links-wrap .right-part .lower{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.menu-links-wrap .left-part .lower .extra-link h2, .full-page-inner .menu-links-wrap .right-part .mobile-extra h2{
+    cursor: pointer;
+    letter-spacing: 0.7px;
+    color: #fff;
+    font-weight: 100;
+    font-family: a1;
+    position: relative;
+}
+
+.menu-links-wrap .left-part .lower .extra-link h2::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    background-color: #ffffff;
+    width: 0%;
+    height: 1px;
+    transition: 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.menu-links-wrap .left-part .lower .extra-link h2:hover::before{
+    left: 0;
+    width: 100%;
+}
+
+.full-page-inner .menu-links-wrap .right-part .lower{
+    gap: 0px;
+    /* background-color: blue; */
+}
+
+@media (max-width:1024px) and (min-height:1000px) {
+    .full-page-menu .top-svg{
+        top: 2vh;
+        left: 3%;
+    }
+    .full-page-menu .menu-icons{
+        left: 3%;
+        bottom: 2vh;
+    }
+    .full-page-inner .menu-links-wrap .left-part{
+        padding-bottom: 2vh;
+    }
+    .full-page-inner .menu-links-wrap .left-part .upper, .full-page-inner .menu-links-wrap .right-part .lower{
+        gap:15px;
+    }
+}
+
+
+@media (max-width:576px) and (max-height:1000px) {
+    .full-page-menu .full-page-inner{
+        justify-content: flex-start;
+        padding-left: 5%;
+    }
+    .full-page-menu .top-svg{
+        top: 8vh;
+        left: 5%;
+    }
+    .full-page-menu .menu-icons{
+        left: 5%;
+        bottom: 8vh;
+    }
+    .full-page-inner .menu-links-wrap .left-part{
+        padding-bottom: 0vh;
+        align-items: flex-start;
+    }
+    .full-page-inner .menu-links-wrap .left-part .lower{
+        display: none;
+    }
+    .full-page-inner .menu-links-wrap .left-part .upper, .full-page-inner .menu-links-wrap .right-part .lower{
+        gap:15px;
+        align-items: flex-start;
+    }
+    .full-page-inner .menu-links-wrap{
+        flex-direction: column;
+        align-items: flex-start;
+        /* background-color: rgb(1, 41, 41); */
+        gap: 15px;
+    }
+    .full-page-inner .menu-links-wrap .right-part .mobile-extra{
+        display: block;
+    }
+    .full-page-inner .menu-links-wrap .right-part .mobile-extra{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .full-page-menu .menu-links-wrap .right-part{
+        align-items:flex-start;
+        gap: 10vw;
+    }
+}

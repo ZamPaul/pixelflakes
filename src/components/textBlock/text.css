@@ -1,0 +1,11 @@
+.text-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.text-block h2{
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}

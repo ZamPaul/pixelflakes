@@ -1,0 +1,180 @@
+.sketch-wrap{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blacktwo);
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.sketch-wrap .inner{
+    width: 96%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    z-index: 40;
+}
+
+.sketch-left{
+    transform-origin: 50% 100%;
+}
+
+.sketch-left h1{
+    color: #fff;
+    font-size: 6.5vw;
+    line-height: 1em;
+}
+
+.sketch-right{
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transform-origin: 50% 100%;
+}
+
+.button-wrap{
+    margin-top: 1vw;
+}
+
+.sketch-right p{
+    color: #f1efe7;
+    font-family: a1;
+    font-weight: 100;
+    font-size: 17px;
+    letter-spacing: 0.7px;
+}
+
+.preventclickdiv{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+    height: 100vh;
+    pointer-events: all;
+    z-index: 35;
+    cursor: pointer;
+}
+
+.clickdiv{
+    z-index: 37;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    cursor: pointer;
+    width: 38vw;
+    height: 34vw;
+    /* background-color: aqua; */
+}
+
+.moveBackButton{
+    padding: 10px 20px;
+    position: absolute;
+    /* pointer-events: all; */
+    z-index: 37;
+    right: 4%;
+    bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+    border: 1px solid #ffffff52;
+    background-color: #121212;
+}
+
+.dragButton{
+    opacity: 0;
+    position: fixed;
+    background-color: #121212;
+    border: 1px solid #ffffff52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    gap: 15px;
+    padding: 15px 25px;
+    pointer-events: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2000;
+    overflow: hidden;
+}
+
+.moveBackButton h2, .dragButton h2{
+    color: #f1efe7;
+    font-family: a4;
+    font-weight: 900;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.moveBackButton .box, .dragButton .box{
+    width: 10px;
+    height: 10px;
+    background-color: #f1efe7;
+}
+
+
+@media (max-width:1050px) and (min-height:1000px) {
+    .sketch-wrap{
+        height: 70vh;
+    }
+    .inner{
+        margin-top: 50vw;
+    }
+}
+
+@media  (max-width:576px) and (max-height:1000px) {
+    .sketch-wrap{
+        height: 90vh;
+        align-items: flex-end;
+        padding-bottom: 20vw;
+    }
+    .sketch-wrap .inner{
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8vw;
+        margin-top: 0;
+    }
+    .sketch-left h1{
+        font-size: 14vw;
+    }
+    .sketch-right{
+        width: 350px;
+    }
+    .sketch-right p{
+        font-size: 20px;
+        line-height: 1.3em;
+    }
+    .button-wrap{
+        margin-top: 5vw;
+    }
+    .dragButton{
+        display: none;
+    }
+    .clickdiv{
+        width: 65vw;
+        height: 65vw;
+        top: 20%;
+        transform: translate(-50%,-35%);
+        /* background-color: rgba(0, 255, 255, 0.185); */
+    }
+    .moveBackButton{
+        bottom: 10%;
+    }
+}

@@ -1,0 +1,35 @@
+.foot-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.1vw;
+}
+
+.foot-nav .nav-item .foot-tag{
+    color: #121212;
+    position: relative;
+    cursor: pointer;
+}
+
+.foot-nav .nav-item .foot-tag::before{
+    content: '';
+    position: absolute;
+    background-color: #121212;
+    width: 0%;
+    height: 3px;
+    right: 0%;
+    bottom: -1px;
+    transition: all 0.5s cubic-bezier(0.87, 0, 0.13, 1);;
+}
+
+.foot-nav .nav-item .foot-tag:hover::before{
+    width: 100%;
+    left: 0%;
+}
+
+@media (max-width:576px) and (max-height:1000px) {
+    .foot-nav .nav-item .foot-tag{
+        font-size: 13vw;
+    }
+}

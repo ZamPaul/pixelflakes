@@ -1,0 +1,51 @@
+.progress{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    position: fixed;
+    bottom: 5vh;
+    left: 2%;
+}
+
+.progress .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.progress .content h2{
+    color: #121212;
+    font-weight: 100;
+    font-size: 23px;
+}
+
+.progress .content h2:nth-child(2){
+    color: #1212129d;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.progress .progress-line{
+    width: 180px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: #0e008f57;
+}
+
+.progress .progress-line .line{
+    height: 100%;
+    background-color: #121212;
+    border-radius: 50px;
+}
+
+.tracker{
+    width: 100%;
+    height: 350vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}

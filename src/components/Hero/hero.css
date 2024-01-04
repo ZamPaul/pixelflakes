@@ -1,0 +1,187 @@
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 33vh;
+    position: relative;
+}
+
+.hero .hero-para{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 68%;
+    position: relative;
+    /* background-color: aqua; */
+}
+
+.hero .hero-para .hero-nested{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.hero .hero-para .hero-nested p{
+    font-size: 4.1vw;
+    line-height: 1.33em;
+}
+
+.hero .hero-para .hero-nested p:nth-child(2){
+    line-height: 0.87em;
+}
+
+.hero .hero-para .hero-nested p .para-sec-span, .hero .hero-para p .para-first-span{
+    margin: 0 1.2vw;
+}
+
+.para-first-span{
+    display: none;
+}
+
+.para-first-span svg{
+    margin-bottom: -5px;
+}
+
+.para-sec-span svg{
+    margin-bottom: -8px;
+}
+
+.hero .hero-para .hero-nested p:nth-child(2){
+    align-self: flex-start;
+}
+
+.video-container{
+    margin-top: 4.5vw;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    background-color: #fff;
+}
+
+.video-container .video{
+    width: 100%;
+    height: 90vh;
+}
+
+.video-container .video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-container .champion{
+    padding: 0.8vw 0;
+    width: 100%;
+    border-bottom: 1px solid #12121281;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.video-container .champion h1{
+    font-size: 2.5vw;
+}
+
+.champion h1:nth-child(2){
+    width: 20vw;
+    height: 1.2em;
+    /* background-color: aqua; */
+    position: relative;
+    overflow: hidden;
+}
+
+.champion h1 span{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: translate(0%,0%) rotateX(90deg);
+    font-size: 2.5vw;
+    letter-spacing: -0.7px;
+    font-family: a2;
+    font-weight: 100;
+    line-height: 1.2em;
+    text-transform: capitalize;
+    opacity: 0;
+    transition: all 0.9s cubic-bezier(0.65, 0, 0.35, 1);
+    transform-origin: 50% 100%;
+}
+
+.champion-span.active{
+    opacity: 1;
+    transform: translate(0,0) rotateX(0deg);
+}
+
+@media (max-width:1024px) and (min-height:1000px) {
+    .hero{
+        /* background-color: rgb(141, 141, 141); */
+        padding-top: 15vh;
+    }
+    .hero .hero-nested .hero-para p{
+        font-size: 4.3vw;
+    }
+    .video-container .video{
+        height: 35vh;
+    }
+}
+
+@media (max-width:576px) and (max-height:1000px) {
+    .hero{
+        padding-top: 22vh;
+    }
+    .hero .hero-para{
+        width: 90%;
+    }
+    .hero .hero-para .hero-nested p{
+        font-size: 7.5vw;
+        line-height: 1.3em;
+    }
+    .sec-para{
+        display: none;
+    }
+    .hero .hero-para .hero-nested p .para-first-span{
+        margin: 0 3vw;
+        margin-left: 0;
+    }
+    .para-first-span{
+        display: inline;
+    }
+    .para-first-span svg{
+        margin-bottom: -3px;
+    }
+    .para-sec-span{
+        display: none;
+    }
+    .video-container{
+        margin-top: 6vw;
+        width: 100%;
+    }
+    .video-container .video{
+        height: 30vh;
+    }
+    .video-container .champion{
+        padding: 2vh 6vw;
+    }
+    .video-container .champion h1{
+        font-size: 5.3vw;
+    }
+    .champion h1 span{
+        font-size: 5.3vw;
+    }
+    .champion h1:nth-child(2){
+        width: 40vw;
+    }
+}
+
+
+
+

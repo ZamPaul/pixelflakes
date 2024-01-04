@@ -1,0 +1,53 @@
+.aboutPage{
+    width: 100%;
+    background-color: #121212;
+    padding-top: 40vh;
+}
+
+.creative-wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6vh;
+}
+
+.creative-wrap .creative-text{
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 28vw;
+}
+
+.creative-text h1{
+    color: #fff;
+    font-size: 6vw;
+    line-height: 1em;
+}
+
+.about-photo-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-photo-section .about-photo-inner{
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-photo-inner .about-photo{
+    width: 66vw;
+    height: 85vh;
+}
+
+.about-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

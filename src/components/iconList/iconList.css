@@ -1,0 +1,25 @@
+.icon-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+    position: relative;
+}
+
+.icon-list .icon-wrap{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+@media (max-width:1024px) and (min-height:1000px) {
+    .icon-list{
+        gap: 3vw;
+    }
+}
+
+@media (max-width:576px) and (max-height:1000px) {
+    .icon-list{
+        gap: 5vw;
+    }
+}
