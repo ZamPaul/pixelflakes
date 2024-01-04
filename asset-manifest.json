@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pixelflakes/static/css/main.cb98b25c.css",
-    "main.js": "/pixelflakes/static/js/main.87790064.js",
+    "main.js": "/pixelflakes/static/js/main.87ef8ac4.js",
     "static/js/787.76ffc7ed.chunk.js": "/pixelflakes/static/js/787.76ffc7ed.chunk.js",
     "static/media/modern-tokyo-street-background (1).jpg": "/pixelflakes/static/media/modern-tokyo-street-background (1).d7a4d1fd99d28e0a036c.jpg",
     "static/media/low-angle-shot-tall-city-building-with-blue-sky-background-new-york (1).jpg": "/pixelflakes/static/media/low-angle-shot-tall-city-building-with-blue-sky-background-new-york (1).aa36c48204c2d5f51348.jpg",
@@ -18,11 +18,11 @@
     "static/media/workaholics-businesspeople-brainstorming-financial-company-ideas_482257-10539.jpg": "/pixelflakes/static/media/workaholics-businesspeople-brainstorming-financial-company-ideas_482257-10539.3b6d4c8ff7d63e716f50.jpg",
     "index.html": "/pixelflakes/index.html",
     "main.cb98b25c.css.map": "/pixelflakes/static/css/main.cb98b25c.css.map",
-    "main.87790064.js.map": "/pixelflakes/static/js/main.87790064.js.map",
+    "main.87ef8ac4.js.map": "/pixelflakes/static/js/main.87ef8ac4.js.map",
     "787.76ffc7ed.chunk.js.map": "/pixelflakes/static/js/787.76ffc7ed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cb98b25c.css",
-    "static/js/main.87790064.js"
+    "static/js/main.87ef8ac4.js"
   ]
 }
