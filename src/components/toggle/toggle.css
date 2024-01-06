@@ -24,7 +24,6 @@
     left: 0%;
     top: 0%;
     transform: translate(0%,0%);
-    background-color: #121212;
 }
 
 .toggle-wrap .lines{
@@ -45,9 +44,7 @@
     transform-origin: 50% 0%;
     /* transform: translate(-50%,-50%); */
     border-radius: 200px;
-    background-color: #ffffff;
     position: absolute;
-    /* transition: all ease 0.6s; */
 }
 
 @media (max-width:1024px) and (min-height:1000px) {

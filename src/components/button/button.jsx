@@ -67,13 +67,28 @@ function Button({title, invert, lineColor, textColor, initial, down, up, borderC
 
   return (
     <div className='button-wrap' ref={btnref} onMouseEnter={managetrue} onMouseLeave={managefalse}> 
-      <motion.div className="arrow-wrap" variants={variantsarrow} animate={isHover ? 'down' : 'up'} initial='initial' style={{ border:`0.1px solid ${borderColor}`}}>
+
+      <motion.div className="arrow-wrap"
+       variants={variantsarrow}
+       animate={isHover ? 'down' : 'up'}
+       initial='initial'
+       style={{ border:`0.1px solid ${borderColor}`}}>
         <img src={arrow} alt="image" style={{filter:`invert(${invert})`}}/>
       </motion.div>
-      <motion.div className="text-wrap" variants={text} initial='initial' animate={isHover?'left':'right'}>
-            <p style={{fontSize:'17px', letterSpacing:letterSpacing, color:textColor, fontFamily:fontFamily}} ref={textref}>{title}</p>
-            <motion.div className="underline" style={{backgroundColor:lineColor}} variants={line} animate={isHover?'shrink':'grow'} initial='initial'></motion.div>
+
+      <motion.div className="text-wrap"
+       variants={text} initial='initial' 
+       animate={isHover?'left':'right'}>
+        <p style={{ letterSpacing:letterSpacing, color:textColor, fontFamily:fontFamily }}
+          ref={textref}>
+            {title}
+        </p>
+        <motion.div className="underline"
+         style={{backgroundColor:lineColor}} 
+         variants={line} animate={isHover?'shrink':'grow'} 
+         initial='initial'></motion.div>
       </motion.div>
+      
     </div>
   )
 }

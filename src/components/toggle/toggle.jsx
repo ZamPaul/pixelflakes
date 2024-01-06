@@ -4,9 +4,11 @@ import {motion, AnimatePresence} from 'framer-motion'
 import FullPageMenu from '../fullPageMenu/fullPageMenu'
 import { overlay, dataLine, lines } from './data'
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 
-function Toggle({pageTitle}) {
+function Toggle( { pageTitle } ) {
+
   const toggle = useRef(null)
   const menu = useRef(null)
 
@@ -14,12 +16,27 @@ function Toggle({pageTitle}) {
 
   const [isActive, setActive] = useState(false)
 
+
+  // const getLineColor = () => {
+  //   if(pageTitle=='About'){
+  //     return '#121212'
+  //   }else{
+  //     return '#fff'
+  //   }
+  // }
+
+  // const getOverlayColor = () => {
+  //   if(pageTitle=='About'){
+  //     return '#fff'
+  //   }else{
+  //     return '#121212'
+  //   }
+  // }
+
   useEffect(()=>{
-    if(pageTitle==='About'){
-      gsap.to('.toggle-overlay',{
-        backgroundColor: '#fff'
-      })
-    }
+
+    gsap.registerPlugin(ScrollTrigger)
+
   },[])
 
 
@@ -71,7 +88,7 @@ function Toggle({pageTitle}) {
     <>
     <div className='toggle' ref={toggle} onClick={setMenuActive} onMouseEnter={setTrue} onMouseLeave={setFalse}>
       <div className="toggle-wrap">
-        <motion.div className="toggle-overlay" variants={overlay} initial={getInitial} animate={getVariants}></motion.div>
+        <motion.div className="toggle-overlay" style={{backgroundColor:"#121212"}} variants={overlay} initial={getInitial} animate={getVariants}></motion.div>
         <motion.div className="lines" variants={lines} animate={getVariants} initial={getInitial}>
           {
             dataLine.map( (elem,i) => {
@@ -79,7 +96,7 @@ function Toggle({pageTitle}) {
                 left: elem.left,
                 top: elem.top,
                 transform: elem.transform,
-                backgroundColor: pageTitle==='About'?'#121212':'#fff',
+                backgroundColor: "#fff",
               }
               return (
                 <motion.div className="line" style={style} key={i} variants={elem.variant} animate={getVariants} initial={getInitial}></motion.div>

@@ -17,11 +17,21 @@ export default function Hero() {
   let championSpans = document.getElementsByClassName('champion-span')
 
   let active = 0
-  let svgwi = '3.5vw'
-  let paraValue = 'Pixelflakes is an architectural'
-  if(window.innerWidth<576 && window.innerHeight<1000){
-    svgwi = '6.4vw'
-    paraValue='Pixelflakes is an architectural marketing firm comprised of creatives, designers and thinkers.'
+
+  let svgwi = () => {
+    if(window.innerWidth<=576 && window.innerHeight<=1000){
+      return '6.4vw'
+    }else{
+      return '3.5vw'
+    }
+  }
+
+  let paraValue = () => {
+    if(window.innerWidth<=576 && window.innerHeight<=1000){
+      return 'Pixelflakes is an architectural marketing firm comprised of creatives, designers and thinkers.'
+    }else{
+      return 'Pixelflakes is an architectural'
+    }
   }
 
   const champion = () => {
@@ -80,8 +90,18 @@ export default function Hero() {
     <div className='hero'>
       <div className="hero-para">
         <div className="hero-nested">
-          <p className='first-para'><span className='para-first-span'><Svg width={svgwi}/></span>{paraValue}</p>
-          <p className='sec-para'>marketing firm<span className='para-sec-span'><Svg width={svgwi}/></span>comprised of creatives, designers and thinkers.</p>
+          <p className='first-para'>
+            <span className='para-first-span'>
+              <Svg width={svgwi()}/>
+            </span>
+            {paraValue()}
+          </p>
+          <p className='sec-para'>
+            marketing firm
+            <span className='para-sec-span'>
+              <Svg width={svgwi()}/>
+            </span>comprised of creatives, designers and thinkers.
+          </p>
         </div>
       </div>
       <div className="video-container">

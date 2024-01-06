@@ -29,10 +29,10 @@ function App() {
 
     requestAnimationFrame(raf)
   },[])
+
   
   return (
     <>
-      {/* <Header /> */}
       <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
             <Route path='*' element={<div>Nhi pata</div>}/>

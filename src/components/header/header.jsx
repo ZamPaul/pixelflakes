@@ -24,6 +24,7 @@ function Header({pageTitle}) {
     })
 
     gsap.registerPlugin(ScrollTrigger)
+
     ScrollTrigger.create({
       trigger: '.header',
       start: 'top top',
@@ -40,22 +41,23 @@ function Header({pageTitle}) {
       scrub: 3,
       // markers: true
     })
-  },[])
 
-  useEffect(()=>{
+    // only runs on aboutPage =>
+
     if(pageTitle==='About'){
       setTimeout(() => {
         gsap.to(".letter",{
           fill: '#fff'
         })
         gsap.to('.shape',{
-          fill: '#fff'
+          fill: '#fff',
         })
         gsap.to('.link-tag',{
           color: '#fff'
         })
       }, 900);
     }
+
   },[])
 
   let svgwi = '13vw'

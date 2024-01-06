@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import {animate, motion} from 'framer-motion'
-import { variants, slideBack, slideTop, overlay, titleVar, titleH1 } from './data'
+import { slideTop, slideBack } from './data'
 import Toggle from '../../components/toggle/toggle'
 import Header from '../header/header'
 import './transition.css'
@@ -10,18 +10,23 @@ import bezier from 'bezier-easing'
 const barHeight = Math.ceil(window.innerHeight/50)
 
 const Transition = ( { children , title } ) => {
+  let renderCheck = 0;
   const ref = useRef(null)
   const titleRef = useRef(null)
 
   const ease = bezier(0.33, 1, 0.68, 1)
 
-  const anim = () => {
-    animate('.title',{
-      opacity: 0,
-      top: '70%',
-      transition: {duration:.5,ease:[0.33, 1, 0.68, 1]},
-    })
-  }
+  // const getVariants = () => {
+  //   if(title='Home'){
+  //     if(renderCheck>0){
+  //       return slideBack
+  //     }else{
+  //       return firstRender
+  //     }
+  //   }else{
+  //     return slideBack
+  //   }
+  // }
 
   useEffect(()=>{
     gsap.to(titleRef.current,{

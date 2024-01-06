@@ -46,7 +46,6 @@ export const upper = {
 
 export const center = {
     initial: {
-      // width: '100%',
       scaleX: 1
     },
     open: {
